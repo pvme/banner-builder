@@ -1,0 +1,148 @@
+.vertical-align-content {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.form-label,
+.form-check-input {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-check-label,
+.swtich-no {
+    font-weight: normal;
+}
+
+.banner {
+    min-width: 720px;
+    width: 720px;
+    min-height: 300px;
+    height: 300px;
+    position: relative;
+    overflow: clip;
+    background: rgb(0,22,36);
+    background: linear-gradient(58deg, rgba(0,22,36,1) 24%, rgba(39,84,113,1) 71%, rgba(66,99,106,1) 100%);
+    font-family: "Russo One", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.banner-background {
+    position: absolute;
+    z-index: 1;
+    width: 130%;
+    top: -10%;
+    left: -10%;
+}
+
+.banner-main-image {
+    position: absolute;
+    z-index: 7;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    margin: 0;
+}
+
+.banner-main-image img {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    -webkit-filter: drop-shadow(0px 0px 10px #444);
+    filter: drop-shadow(0px 0px 10px #444);
+    width: 100%;
+}
+
+.banner-background svg,
+.banner-main-image img {
+    cursor: move;
+}
+
+.banner-rows {
+    pointer-events: none;
+    position: absolute;
+    z-index: 7;
+    top: 128px;
+    padding-right: 233px;
+    padding-left: 0;
+}
+
+.banner-row div {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 66px;
+    height: 66px;
+    margin: 0 5px 5px 0;
+    padding: 9px;
+}
+
+.banner-row img {
+    max-width: 85%;
+    max-height: 85%;
+    -webkit-filter: drop-shadow(0px 0px 15px #333);
+    filter: drop-shadow(0px 0px 15px #333);
+}
+
+
+.boss-size-top img {
+    margin-top: 6px;
+}
+
+.poisonable-top img {
+    margin-top: 2px;
+}
+
+.weakness-top img {
+    margin-top: 3px;
+}
+
+.familiar-top img {
+    margin-top: 4px;
+}
+
+.poisonable-bottom img,
+.weakness-bottom img,
+.familiar-bottom img {
+    margin-top: 3px;
+    margin-left: 1px;
+}
+
+.banner-title {
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding-right: 233px;
+    top: 31px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    -webkit-filter: drop-shadow(0px 0px 15px #333);
+    filter: drop-shadow(0px 0px 15px #333);
+}
+
+.boss-size-bottom span {
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-left: 2px;
+}
