@@ -78,23 +78,34 @@
     cursor: move;
 }
 
+
 .banner-rows {
     pointer-events: none;
     position: absolute;
     z-index: 7;
-    top: 128px;
-    padding-right: 233px;
-    padding-left: 115px;
+    top: 143px;
+    width: 400px;
+    margin-left: 55px;
 }
 
 .banner-row div {
     position: relative;
-    border: 1px solid white;
-    border-radius: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
     width: 66px;
     height: 66px;
-    margin: 0 5px 5px 0;
-    padding: 9px;
+    margin: 0 13px 13px 0;
+    padding: 10px;
+}
+
+.banner-row-bottom {
+    margin-top: -40px;
+}
+
+
+.banner-row-bottom div {
+    padding: 15px;
+    border: 0;
 }
 
 .banner-row img {
@@ -105,8 +116,9 @@
 }
 
 
-.boss-size-top img {
+.sgb-top img {
     margin-top: 6px;
+    margin-left: 3px;
 }
 
 .poisonable-top img {
@@ -134,7 +146,7 @@
     z-index: 10;
     width: 100%;
     padding-right: 233px;
-    top: 31px;
+    top: 58px;
     font-size: 50px;
     letter-spacing: 1px;
     -webkit-filter: drop-shadow(0px 0px 15px #333);
