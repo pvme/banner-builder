@@ -153,8 +153,8 @@
     filter: drop-shadow(0px 0px 15px #333);
 }
 
-.boss-size-bottom span {
-    font-size: 23px;
+.boss-size-top span {
+    font-size: 18px;
     letter-spacing: 2px;
     margin-left: 2px;
 }

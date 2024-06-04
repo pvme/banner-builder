@@ -31,7 +31,7 @@ $(function() {
     // Live update boss size
     $("#bossSize").on('input', function() {
         size = this.value
-        $(".boss-size-bottom").find("span").text(size)
+        $(".boss-size-top").find("span").text(size)
         img = $(".sgb-bottom img")
         if (size == "1x1" || size == "2x2") {
             img.attr("src", cross)
