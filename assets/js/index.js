@@ -29,40 +29,32 @@ $(function() {
     })
 
 
-    var bossSize
-
-    function updateSGBable() {
-        var sgb = $(".sgb-bottom img")
-          , size1 = Number($(".boss-size1").text().charAt(0))
-          , size2 = Number($(".boss-size2").text().charAt(0))
-
-        if (size1 > 2 || size2 > 2) {
-            sgb.attr("src", tick)
-        } else {
-            sgb.attr("src", cross)
-        }
-    }
-
-
     // Live update boss size1
     $("#bossSize1").on('input', function() {
         size = this.value
         $(".boss-size1").text(size)
-        updateSGBable()
     })
     // Live update boss size2
     $("#bossSize2").on('input', function() {
         var size = this.value
         var el = $(".boss-size2").text(size)
-        img = $(".sgb-bottom img")
 
         if (size == "hide") {
             el.hide()
         } else {
             el.show()
         }
+    })
 
-        updateSGBable()
+
+    // Live update sgb
+    $("#sgb").on('change', function() {
+        img = $(".sgb-bottom img")
+        if ($(this).is(':checked')) {
+            img.attr("src", tick)
+        } else {
+            img.attr("src", cross)
+        }
     })
 
 
