@@ -3,6 +3,10 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 
 $(function() {
 
+    $("form").on("submit", function (e){
+        e.preventDefault()
+    })
+
     // Download as PNG
     async function downloadBanner() {
         const data = await html2canvas(document.querySelector("#banner"));
