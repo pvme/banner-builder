@@ -157,7 +157,7 @@
         <div class="container py-4">
             <header class="pb-3 mb-4 border-bottom">
                 <div class="row">
-                    <div class="col">
+                    <div class="col col-10">
                         <div class="d-flex align-items-center text-body-emphasis text-decoration-none">
                             <img class="logo" src="https://img.pvme.io/images/EPzzJe2xy6.gif">
                             <span class="fs-4 px-3">PVME Guide Banner Builder</span>
@@ -337,8 +337,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-group mt-lg-4 mb-lg-4" role="group">
-                                <button type="button" class="btn btn-md btn-success" data-bs-toggle="modal" data-bs-target="#previewModal" id="download-banner"><i class="bi bi-download"></i> Create banner</button>
+                            <div class="btn-group mt-4 mb-lg-4" role="group">
+                                <button type="button" class="btn btn-md btn-success" data-bs-toggle="modal" data-bs-target="#previewModal" id="download-banner"><i class="bi bi-download"></i> Download banner</button>
                             </div>
                             <!-- CREATE BANNER POPUP BELOW HERE -->
                             <div id="previewModal" class="modal fade text-start" tabindex="-1">
@@ -347,7 +347,6 @@
                                         <div class="modal-header bg-success">
                                             <div class="modal-title">
                                                 <h3><i class="bi bi-check2-circle"></i> Success!</h3>
-                                                <h5>Your banner is below & copied to your clipboard</h5>
                                             </div>
                                             <button type="button" class="btn-close btn-lg" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
@@ -371,6 +370,7 @@
     <script src="./assets/dist/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/dist/js/html2canvas.min.js"></script>
+    <script src="./assets/dist/js/FileSaver.min.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
