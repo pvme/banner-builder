@@ -88,9 +88,14 @@
     padding-right: 190px;
 }
 
-.banner-row > div {
+.sgb-top,
+.weakness-top,
+.weakness2-top,
+.poisonable-top,
+.familiar-top {
     position: relative;
     border: 2px solid white;
+    border-color: whte !important;
     border-radius: 50%;
     width: 66px;
     height: 66px;
