@@ -30,6 +30,16 @@
     font-weight: normal;
 }
 
+.susceptibility-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.susceptibility-options .btn {
+    font-weight: 600;
+}
+
 .banner {
     min-width: 720px;
     width: 720px;
@@ -89,14 +99,10 @@
 }
 
 .banner-row > div,
-.sgb-top,
-.weakness-top,
-.weakness2-top,
-.poisonable-top,
-.familiar-top {
+.susceptibility-top {
     position: relative;
     border: 2px solid white;
-    border-color: whte !important;
+    border-color: white !important;
     border-radius: 50%;
     width: 66px;
     height: 66px;
@@ -122,36 +128,55 @@
 }
 
 
-.weakness-top,
-.weakness-bottom,
-.weakness2-top,
-.weakness2-bottom {
-    display: none;
+.susceptibility-bottom img {
+    margin-top: 3px;
+    margin-left: 1px;
 }
 
-.sgb-top img {
+.susceptibility-sgb-top img {
     margin-top: 6px;
     margin-left: 3px;
 }
 
-.poisonable-top img {
-    margin-top: 2px;
-}
-
-.weakness2-top img,
-.weakness-top img {
+.susceptibility-poison-top img,
+.susceptibility-undeadSlayer-top img,
+.susceptibility-dragonSlayer-top img,
+.susceptibility-demonSlayer-top img {
     margin-top: 3px;
 }
 
-.familiar-top img {
+.susceptibility-familiar-top img {
     margin-top: 4px;
 }
 
-.poisonable-bottom img,
-.weakness-bottom img,
-.familiar-bottom img {
-    margin-top: 3px;
-    margin-left: 1px;
+.susceptibility-compact .banner-row > div {
+    width: 40px;
+    height: 40px;
+    margin: 0 7px 7px 0;
+    padding: 5px;
+}
+
+.susceptibility-compact .banner-row-bottom {
+    margin-top: -25px;
+}
+
+.susceptibility-compact .banner-row-bottom > div {
+    padding: 8px;
+}
+
+.susceptibility-compact .boss-size-top span {
+    font-size: 12px;
+    letter-spacing: 0;
+}
+
+.susceptibility-compact .susceptibility-sgb-top img,
+.susceptibility-compact .susceptibility-familiar-top img,
+.susceptibility-compact .susceptibility-poison-top img,
+.susceptibility-compact .susceptibility-undeadSlayer-top img,
+.susceptibility-compact .susceptibility-dragonSlayer-top img,
+.susceptibility-compact .susceptibility-demonSlayer-top img,
+.susceptibility-compact .susceptibility-bottom img {
+    margin: 0;
 }
 
 .banner-title {
